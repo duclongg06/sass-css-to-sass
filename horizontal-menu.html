@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu ngang</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        #menu {
+            height: 40px;
+            border: 1px solid #ccc;
+            background-color: #333;
+        }
+
+        #menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #menu > ul > li {
+            float: left;
+            position: relative;
+        }
+
+        #menu li a {
+            display: block;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        #menu li a:hover {
+            background-color: red;
+        }
+
+        /* Menu con */
+        #menu ul ul {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            visibility: hidden;
+            background-color: #333;
+        }
+
+        /* Hiển thị menu con khi hover mục cha */
+        #menu ul li:hover > ul {
+            visibility: visible;
+        }
+
+        /* Các mục trong menu con */
+        #menu ul ul li {
+            position: relative;
+            float: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+
+            <li>
+                <a href="#">Products</a>
+                <ul>
+                    <li><a href="#">Product 1</a></li>
+                    <li><a href="#">Product 2</a></li>
+                    <li><a href="#">Product 3</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                    <li><a href="#">Service 3</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">About</a></li>
+
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
