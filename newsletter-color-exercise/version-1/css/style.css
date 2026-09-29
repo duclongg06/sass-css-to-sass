@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #2563EB;
+    --secondary-color: #1D4ED8;
+    --accent-color: #38BDF8;
+    --text-color: #000000;
+    --light-bg-color: #EFF6FF;
+    --white: #ffffff;
+    --darker-primary-color: #1E3A8A;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.primary-bg {
+    background-color: var(--primary-color);
+}
+
+.secondary-bg {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.accent-bg {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.text-primary-color {
+    color: var(--primary-color);
+}
+
+.text-secondary-color {
+    color: var(--secondary-color);
+}
+
+.text-accent-color {
+    color: var(--accent-color);
+}
+
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--darker-primary-color);
+    border-color: var(--darker-primary-color);
+    color: var(--white);
+}
+
+.light-bg {
+    background-color: var(--light-bg-color);
+}
+
+.text-color {
+    color: var(--text-color);
+}
+
+.footer-bg {
+    background-color: var(--darker-primary-color);
+}
