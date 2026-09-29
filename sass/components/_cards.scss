@@ -1,0 +1,7 @@
+.card {
+  border: 1px solid $border-color;
+  @include box-style;
+  h3 {
+    color: $text-color;
+  }
+}
