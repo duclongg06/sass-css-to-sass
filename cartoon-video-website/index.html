@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon TV - Xem phim hoạt hình trực tuyến</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="#">Cartoon TV</a>
+        </div>
+        <nav class="head-link">
+            <a href="#">Trang chủ</a>
+            <a href="#">Phim hoạt hình</a>
+            <a href="#">Mới cập nhật</a>
+            <a href="#">Xem nhiều</a>
+            <a href="#">Giới thiệu</a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        
+        <div class="left-content">
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm phim...">
+                <button type="button">Tìm kiếm</button>
+            </div>
+            
+            <div class="sort-box">
+                <label for="sort">Sắp xếp:</label>
+                <select id="sort">
+                    <option>Mới cập nhật</option>
+                    <option>Nhiều lượt xem nhất</option>
+                </select>
+            </div>
+
+            <h2>Danh sách phim</h2>
+            <ul class="video-list">
+                <li><a href="#video1">Doraemon - Tập 1</a></li>
+                <li><a href="#video2">Doraemon - Tập 2</a></li>
+                <li><a href="#video3">Tom and Jerry - Tập 1</a></li>
+                <li><a href="#video4">Tom and Jerry - Tập 2</a></li>
+            </ul>
+        </div>
+
+        <div class="right-content">
+            <h1>Phim hoạt hình</h1>
+
+            <div class="video-section" id="video1">
+                <h2>Doraemon - Tập 1</h2>
+                <video controls width="100%">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ thẻ video.
+                </video>
+            </div>
+
+            <div class="video-item" id="video2">
+                <h2>Doraemon - Tập 2</h2>
+                <p>Nội dung giới thiệu tập phim.</p>
+            </div>
+
+            <div class="video-item" id="video3">
+                <h2>Tom and Jerry - Tập 1</h2>
+                <p>Nội dung giới thiệu tập phim.</p>
+            </div>
+
+            <div class="video-item" id="video4">
+                <h2>Tom and Jerry - Tập 2</h2>
+                <p>Nội dung giới thiệu tập phim.</p>
+            </div>
+
+            <div class="youtube-section">
+                <h2>Video hoạt hình trên YouTube</h2>
+                <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 Cartoon TV. All rights reserved.</p>
+        <p>Website xem phim hoạt hình trực tuyến.</p>
+    </footer>
+
+</body>
+</html>
